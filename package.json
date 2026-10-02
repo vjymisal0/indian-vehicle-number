@@ -1,0 +1,51 @@
+{
+  "name": "indian-vehicle-number",
+  "version": "0.1.0",
+  "description": "Validate, parse and format Indian vehicle registration numbers (including BH series) with zero runtime dependencies.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./src/index.d.ts",
+        "default": "./src/index.js"
+      },
+      "require": {
+        "types": "./src/index.d.cts",
+        "default": "./src/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build-cjs.js",
+    "test": "node scripts/build-cjs.js && node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "india",
+    "vehicle",
+    "registration",
+    "number-plate",
+    "license-plate",
+    "rto",
+    "bh-series",
+    "validator",
+    "parser"
+  ],
+  "author": "vjymisal0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjymisal0/indian-vehicle-number.git"
+  },
+  "homepage": "https://github.com/vjymisal0/indian-vehicle-number#readme",
+  "bugs": "https://github.com/vjymisal0/indian-vehicle-number/issues",
+  "engines": {
+    "node": ">=18"
+  }
+}
