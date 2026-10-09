@@ -1,8 +1,11 @@
 {
   "name": "indian-vehicle-number",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validate, parse and format Indian vehicle registration numbers (including BH series) with zero runtime dependencies.",
   "type": "module",
+  "main": "./src/index.cjs",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -13,7 +16,8 @@
         "types": "./src/index.d.cts",
         "default": "./src/index.cjs"
       }
-    }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "src",
